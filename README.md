@@ -11,3 +11,9 @@ PHP 7.4
 Redis
 
 Apache
+
+# 構築
+
+```
+$ docker-compose up -d --build
+```
