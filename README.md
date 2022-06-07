@@ -14,9 +14,27 @@ Apache 2.4
 
 # 構築
 
+`app`ディレクトリを`repository`ディレクトリへ移動
+
+コンテナ立ち上げ
+
 ```
 $ docker-compose up -d --build
 ```
+laravel初期化
+```
+$ docker-compose run --rm web_php74 bash
+
+$ cp .env.example .env
+
+$ php artisan key:generate
+
+$ composer install
+
+$ php artisan migrate:fresh
+```
+
+
 
 ## mysqlコンテナ
 ```
