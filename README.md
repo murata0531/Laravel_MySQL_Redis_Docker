@@ -4,13 +4,13 @@
 
 Laravel 8
 
-MySQL 8
+MySQL 5.8
 
 PHP 7.4
 
 Redis
 
-Apache
+Apache 2.4
 
 # 構築
 

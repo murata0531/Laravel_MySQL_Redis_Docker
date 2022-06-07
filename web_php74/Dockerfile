@@ -25,4 +25,6 @@ COPY ./setup/httpd/app.conf /etc/httpd/conf.d/app.conf
 RUN cd /tmp && curl -sS https://getcomposer.org/installer | php \
     && mv ./composer.phar /usr/bin/composer
 
+RUN yum install -y git
+
 CMD ["httpd", "-D", "FOREGROUND"]
